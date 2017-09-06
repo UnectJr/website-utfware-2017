@@ -121,9 +121,8 @@ jQuery(document).ready(function ($) {
 		this.modalHeader.find('.event-name').text(event.find('.event-name').text());
 		this.modalHeader.find('.event-date').text(event.find('.event-date').text());
 		this.modal.attr('data-event', event.parent().attr('data-event'));
-
 		//update event content
-		this.modalBody.find('.event-info').load(event.parent().attr('data-content') + '.html .event-info > *', function (data) {
+		this.modalBody.find('.event-info').load('events/' + event.parent().attr('data-content') + '.html .event-info > *', function (data) {
 			//once the event content has been loaded
 			self.element.addClass('content-loaded');
 		});
