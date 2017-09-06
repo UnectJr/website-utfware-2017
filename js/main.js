@@ -63,18 +63,26 @@ jQuery(document).ready(function ($) {
 
 	SchedulePlan.prototype.initEvents = function () {
 		var self = this;
-
+		var x = 0;
 		this.singleEvents.each(function () {
+
 			//create the .event-date element for each event
-			if ($(this).data('start') == '13:00' &&
-				$(this).data('end') == '23:00') {
+			if ($(this).data('start') == '13:00') {
 				//GAMEJAM
-				var durationLabel = '<span class="event-date">' + '??' + ' - ' + '24:00' + '</span>';
-				$(this).children('a').prepend($(durationLabel));
+				if ($(this).data('end') == '23:00') {
+					var durationLabel = '<span class="event-date">' + '13:00' + ' - ' + '24:00' + '</span>';
+				} else if ($(this).data('end') == '17:30' && x == 0) {
+					var durationLabel = '<span class="event-date">' + '00:00' + ' - ' + '17:30' + '</span>';
+					x = 1;
+				} else {
+					var durationLabel = '<span class="event-date">' + $(this).data('start') + ' - ' + $(this).data('end') + '</span>';
+				}
+
 			} else {
 				var durationLabel = '<span class="event-date">' + $(this).data('start') + ' - ' + $(this).data('end') + '</span>';
-				$(this).children('a').prepend($(durationLabel));
 			}
+			// append label
+			$(this).children('a').prepend($(durationLabel));
 
 			//detect click on the event and open the modal
 			$(this).on('click', 'a', function (event) {
@@ -388,10 +396,10 @@ jQuery(document).ready(function ($) {
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function toggleMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
 }
