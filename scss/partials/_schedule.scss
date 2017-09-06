@@ -6,7 +6,7 @@ Main Components
 -------------------------------- */
 .cd-schedule {
 	position: relative;
-	margin: 2em 0;
+	margin: 2em 2em;
 
 	&::before {
 		/* never visible - this is used in js to check the current MQ */ 

@@ -1,3 +1,8 @@
+/**
+ *	Para o Vinicius, eu peguei as paradas q tava aki e botei em um file 
+ *	separa pq tava um zona, cada parte tem um file 
+ *
+ */
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -41,9 +46,7 @@
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left; }
-  header {
-    height: 15em; } }
+    text-align: left; } }
 
 #banner {
   height: 25em;
@@ -55,7 +58,8 @@
   background-size: contain; }
 
 #about {
-  height: 25em;
+  position: relative;
+  min-height: 25em;
   background-color: #EBD217; }
 
 .content {
@@ -63,9 +67,10 @@
   font-size: 2em;
   text-align: center; }
 
-footer {
-  height: 25em;
-  background-color: #929292; }
+#game-jam {
+  min-height: 25em;
+  background-color: #D80351;
+  color: white; }
 
 /* -------------------------------- 
 
@@ -74,7 +79,7 @@ Main Components
 -------------------------------- */
 .cd-schedule {
   position: relative;
-  margin: 2em 0; }
+  margin: 2em 2em; }
   .cd-schedule::before {
     /* never visible - this is used in js to check the current MQ */
     content: 'mobile';
@@ -473,6 +478,12 @@ Main Components
 .cd-schedule.modal-is-open .cover-layer {
   opacity: 1;
   visibility: visible; }
+
+footer {
+  margin-top: 10em;
+  height: 3em;
+  background-color: #929292;
+  padding: 1em; }
 
 /* -------------------------------- 
 

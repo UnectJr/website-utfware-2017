@@ -6,16 +6,23 @@
 
 @import 'partials/layout'; // responsive grid and media queries
 
+/**
+ *	Para o Vinicius, eu peguei as paradas q tava aki e botei em um file 
+ *	separa pq tava um zona, cada parte tem um file 
+ *
+ */
+
 @import 'partials/header';
 
 @import 'partials/banner';
 
 @import 'partials/about';
 
-@import 'partials/footer';
+@import 'partials/gamejam';
 
 @import 'partials/schedule';
 
+@import 'partials/footer';
 
 
 /* -------------------------------- 
