@@ -77,6 +77,18 @@
 Main Components 
 
 -------------------------------- */
+.autor_image {
+  margin: 1em auto;
+  width: 50%; }
+
+.title {
+  font-weight: bold; }
+
+.index_minicurso {
+  margin: 0.5em 0;
+  padding: 1em 0;
+  border-top: 1px solid #fff; }
+
 .cd-schedule {
   position: relative;
   margin: 2em 2em; }
@@ -343,7 +355,8 @@ Main Components
       overflow: auto;
       height: 100%;
       padding: 1.4em 5%; }
-  .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
+  .cd-schedule .event-modal .header-bg,
+  .cd-schedule .event-modal .body-bg {
     /* these are the morphing backgrounds - visible on desktop only */
     position: absolute;
     top: 0;
@@ -389,7 +402,8 @@ Main Components
     display: none; }
   .cd-schedule .event-modal.no-transition {
     transition: none; }
-    .cd-schedule .event-modal.no-transition .header-bg, .cd-schedule .event-modal.no-transition .body-bg {
+    .cd-schedule .event-modal.no-transition .header-bg,
+    .cd-schedule .event-modal.no-transition .body-bg {
       transition: none; }
   @media only screen and (min-width: 800px) {
     .cd-schedule .event-modal {
@@ -416,7 +430,8 @@ Main Components
       .cd-schedule .event-modal .body {
         height: 100%;
         width: auto; }
-      .cd-schedule .event-modal .header-bg, .cd-schedule .event-modal .body-bg {
+      .cd-schedule .event-modal .header-bg,
+      .cd-schedule .event-modal .body-bg {
         /* Force Hardware acceleration */
         transform: translateZ(0);
         will-change: transform;
@@ -429,7 +444,8 @@ Main Components
         transform: none; }
       .cd-schedule .event-modal .event-date {
         display: block; }
-      .cd-schedule .event-modal .close, .cd-schedule .event-modal .event-info {
+      .cd-schedule .event-modal .close,
+      .cd-schedule .event-modal .event-info {
         opacity: 0; }
       .cd-schedule .event-modal .close {
         width: 40px;
