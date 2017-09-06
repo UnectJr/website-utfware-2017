@@ -1,5 +1,25 @@
-#game-jam{
+#game-jam {
     min-height: 25em;
     background-color: $event-color-1;
     color: white;
+}
+
+.button_jam {
+    background-color: $event-color-1;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 2px 0px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button_jam:hover {
+    color: $event-color-1;
+    background-color: #FFF;
+    border: 2px solid $event-color-1;
 }

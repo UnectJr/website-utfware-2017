@@ -16,11 +16,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px; }
+  font-size: 17px;
+  transition: all 0.4s ease 0s; }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #EBD217;
+  background-color: #FFF;
   color: black; }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -67,10 +68,46 @@
   font-size: 2em;
   text-align: center; }
 
+.button_utf {
+  background-color: #EBD217;
+  border: 2px solid #000;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 2px 0px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s; }
+
+.button_utf:hover {
+  color: #EBD217;
+  background-color: #000;
+  border: 2px solid #EBD217; }
+
 #game-jam {
   min-height: 25em;
   background-color: #D80351;
   color: white; }
+
+.button_jam {
+  background-color: #D80351;
+  border: 2px solid #FFF;
+  color: #FFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 2px 0px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s; }
+
+.button_jam:hover {
+  color: #D80351;
+  background-color: #FFF;
+  border: 2px solid #D80351; }
 
 /* -------------------------------- 
 
@@ -82,7 +119,8 @@ Main Components
   width: 50%; }
 
 .title {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 18px; }
 
 .index_minicurso {
   margin: 0.5em 0;

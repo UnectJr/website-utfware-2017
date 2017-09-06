@@ -4,6 +4,18 @@ jQuery(document).ready(function ($) {
 	//if browser does not support transitions - use a different event to trigger them
 	if (!transitionsSupported) transitionEnd = 'noTransition';
 
+	$(".topnav a").click(function () {
+		console.log()
+		$('html,body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			},
+			'slow');
+	});
+
+	$(".button_jam").click(function () {
+		$("#gamegambs").click();
+	});
+
 	//should add a loding while the events are organized 
 
 	function SchedulePlan(element) {
