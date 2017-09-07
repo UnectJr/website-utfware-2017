@@ -539,23 +539,26 @@ Main Components
 footer {
   margin-top: 10em;
   height: 3em;
-  background-color: #929292;
-  padding: 1em; }
+  background-color: #000;
+  padding: 1em;
+  color: #fff; }
 
 /* -------------------------------- 
 
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem;
+  font-family: "Raleway";
   color: #222222;
   background-color: white; }
 
