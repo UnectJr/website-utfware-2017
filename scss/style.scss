@@ -1,9 +1,6 @@
 // Note: we use Autoprefixer to add vendor prefixes to our CSS -> https://github.com/postcss/autoprefixer
-
 @import 'partials/variables'; // colors, fonts etc...
-
 @import 'partials/mixins'; // custom mixins
-
 @import 'partials/layout'; // responsive grid and media queries
 
 /**
@@ -13,17 +10,11 @@
  */
 
 @import 'partials/header';
-
 @import 'partials/banner';
-
 @import 'partials/about';
-
 @import 'partials/gamejam';
-
 @import 'partials/schedule';
-
 @import 'partials/footer';
-
 
 /* -------------------------------- 
 
@@ -31,7 +22,9 @@ Primary style
 
 -------------------------------- */
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
 }
 
@@ -41,7 +34,7 @@ html {
 
 body {
 	font: {
-		size: 1.6rem;
+		size: 1.4rem;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: $text-color;
