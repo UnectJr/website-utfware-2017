@@ -409,14 +409,6 @@ jQuery(document).ready(function ($) {
 			'transform': value
 		});
 	}
-	$(".timeline ul li:first-child span").hover(
-		function () {
-			$("#footer").append($("<span>ÉDEMAR</span>"));
-		},
-		function () {
-			$("#footer").find("span:last").remove();
-		}
-	);
 });
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
