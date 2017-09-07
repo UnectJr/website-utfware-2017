@@ -109,14 +109,17 @@
   background-color: #FFF;
   border: 2px solid #D80351; }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .autor_image {
   margin: 1em auto;
   width: 50%; }
+
+.img_circle {
+  border-radius: 50%; }
 
 .title {
   font-weight: bold;
