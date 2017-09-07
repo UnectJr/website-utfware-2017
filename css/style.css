@@ -6,7 +6,8 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -50,6 +51,8 @@
     text-align: left; } }
 
 #banner {
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 25em;
   background-color: #FFF; }
 
@@ -61,7 +64,19 @@
 #about {
   position: relative;
   min-height: 25em;
-  background-color: #EBD217; }
+  background-color: #EBD217;
+  font-family: 'Raleway', sans-serif; }
+  #about h2 {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-weight: 700; }
+  #about p {
+    line-height: 1.5em;
+    font-size: 0.8em; }
 
 .content {
   padding: 3em;
@@ -79,17 +94,32 @@
   font-size: 16px;
   margin: 50px 2px 0px 2px;
   cursor: pointer;
-  transition: all 0.3s ease 0s; }
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
 
 .button_utf:hover {
   color: #EBD217;
   background-color: #000;
-  border: 2px solid #EBD217; }
+  border: 2px solid #000; }
 
 #game-jam {
   min-height: 25em;
   background-color: #D80351;
-  color: white; }
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+  #game-jam h2 {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-weight: 700; }
+  #game-jam p {
+    line-height: 1.5em;
+    font-size: 0.8em; }
 
 .button_jam {
   background-color: #D80351;
@@ -102,12 +132,14 @@
   font-size: 16px;
   margin: 50px 2px 0px 2px;
   cursor: pointer;
-  transition: all 0.3s ease 0s; }
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  font-weight: 700; }
 
 .button_jam:hover {
   color: #D80351;
   background-color: #FFF;
-  border: 2px solid #D80351; }
+  border: 2px solid #FFF; }
 
 /* --------------------------------
 
@@ -350,10 +382,10 @@ Main Components
 
 .cd-schedule .single-event[data-event="event-4"],
 .cd-schedule [data-event="event-4"] .header-bg {
-  background: #929292; }
+  background: #000; }
 
 .cd-schedule .single-event[data-event="event-4"]:hover {
-  background: #9f9f9f; }
+  background: #0d0d0d; }
 
 .cd-schedule .event-modal {
   position: fixed;
@@ -417,6 +449,7 @@ Main Components
     top: 0;
     right: 0;
     z-index: 3;
+    margin-right: 15px;
     background: rgba(0, 0, 0, 0.1);
     /* replace text with icon */
     color: transparent;
@@ -541,7 +574,7 @@ footer {
   height: 3em;
   background-color: #000;
   padding: 1em;
-  color: #fff; }
+  color: white; }
 
 /* -------------------------------- 
 

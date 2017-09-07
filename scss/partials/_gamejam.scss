@@ -2,6 +2,20 @@
     min-height: 25em;
     background-color: $event-color-1;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    h2{
+        position:relative;
+        width:100%;
+        float:left;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+    p{
+        line-height: 1.5em;
+        font-size: 0.8em;
+    }
 }
 
 .button_jam {
@@ -15,11 +29,13 @@
     font-size: 16px;
     margin: 50px 2px 0px 2px;
     cursor: pointer;
+    text-transform: uppercase;
     transition: all 0.3s ease 0s;
+    font-weight: 700;
 }
 
 .button_jam:hover {
     color: $event-color-1;
     background-color: #FFF;
-    border: 2px solid $event-color-1;
+    border: 2px solid #FFF;
 }
