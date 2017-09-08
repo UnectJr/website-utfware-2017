@@ -146,6 +146,12 @@
 Main Components
 
 -------------------------------- */
+.notice {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 1em;
+  text-align: center; }
+
 .autor_image {
   margin: 1em auto;
   width: 50%; }
