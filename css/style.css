@@ -78,6 +78,13 @@
     line-height: 1.5em;
     font-size: 0.8em; }
 
+.link_utf {
+  color: white;
+  font-weight: bold; }
+
+.link_utf:hover {
+  text-decoration: underline; }
+
 .content {
   padding: 3em;
   font-size: 2em;
@@ -581,6 +588,31 @@ footer {
   background-color: #000;
   padding: 1em;
   color: white; }
+
+.logo_unect {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  padding: 10px 10px; }
+
+.logo_unect:hover {
+  border-bottom: solid 3px black;
+  transition: border 150ms ease; }
+
+.logo_unect img {
+  width: 20px;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em; }
+
+.logo_unect p {
+  color: black;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center; }
 
 /* -------------------------------- 
 

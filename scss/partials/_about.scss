@@ -3,19 +3,28 @@
     min-height: 25em;
     background-color: $event-color-3;
     font-family: 'Raleway', sans-serif;
-    h2{
-        position:relative;
-        width:100%;
-        float:left;
+    h2 {
+        position: relative;
+        width: 100%;
+        float: left;
         text-align: center;
         font-size: 2em;
         margin-bottom: 50px;
         font-weight: 700;
     }
-    p{
+    p {
         line-height: 1.5em;
         font-size: 0.8em;
     }
+}
+
+.link_utf {
+    color: white;
+    font-weight: bold;
+}
+
+.link_utf:hover {
+    text-decoration: underline;
 }
 
 .content {
