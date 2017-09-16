@@ -16,6 +16,14 @@ jQuery(document).ready(function ($) {
 		$("#gamegambs").click();
 	});
 
+	/* 	$(".timeline ul li:last-child").hover(
+			function () {
+				$(".button_jam").text("Paga Nois");
+			},
+			function () {
+				$(".button_jam").text("Saiba Mais");
+			}
+		); */
 	//should add a loding while the events are organized 
 
 	function SchedulePlan(element) {
@@ -92,6 +100,13 @@ jQuery(document).ready(function ($) {
 
 			} else {
 				var durationLabel = '<span class="event-date">' + $(this).data('start') + ' - ' + $(this).data('end') + '</span>';
+			}
+
+			if ($(this).data('start') == '14:00') {
+				var durationLabel = '<span class="event-date">' + '14:00' + ' - ' + '24:00' + '</span>';
+			}
+			if ($(this).data('start') == '11:00') {
+				var durationLabel = '<span class="event-date">' + '00:00' + ' - ' + '12:00' + '</span>';
 			}
 			// append label
 			$(this).children('a').prepend($(durationLabel));
