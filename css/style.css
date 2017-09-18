@@ -612,6 +612,10 @@ footer {
     font-weight: bold;
     text-align: center; } }
 
+@media only screen and (max-width: 900px) {
+  .logo_unect {
+    display: none; } }
+
 /* -------------------------------- 
 
 Primary style
